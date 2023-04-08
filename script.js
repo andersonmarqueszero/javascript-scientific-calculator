@@ -45,3 +45,20 @@ function pi() {
 function e() {
     screen.value = 2.71848182846;
 }
+
+function fact() {
+    var i, num, f;
+    f = 1
+    num = screen.value;
+    for(i = 1; i <= num; i++) {
+        f = f*i;
+    }
+
+    i = i - 1;
+
+    screen.value = f;
+}
+
+function backspc() {
+    screen.value = screen.value.substr(0,screen.value.length-1);
+}
