@@ -15,12 +15,12 @@
 
         <div class="btns">
             <div class="row">
-                <button onclick="backspc()">CE</button>
+                <button id="ce" onclick="backspc()">CE</button>
                 <button onclick="fact()">x!</button>
                 <button class="btn">(</button>
                 <button class="btn">)</button>
                 <button class="btn">%</button>
-                <button onclick="screen.value = ''">AC</button>
+                <button id="ac" onclick="screen.value = ''">AC</button>
             </div>
 
             <div class="row">
@@ -52,10 +52,10 @@
 
             <div class="row">
                 <button onclick="e()">e</button>
-                <button class="btn">x <span style="position: relative; bottom: .4em; right: .1em;">y</span></button>
+                <button onclick="pow()">x <span style="position: relative; bottom: .4em; right: .1em;">y</span></button>
                 <button class="btn">0</button>
                 <button class="btn">.</button>
-                <button onclick="screen.value = eval(screen.value)">=</button>
+                <button id="eval" onclick="screen.value = eval(screen.value)">=</button>
                 <button class="btn">+</button>
             </div>
         </div>
